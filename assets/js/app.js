@@ -164,7 +164,7 @@ function buildUserSelectionForm (users) {
    if ('keywords' in user && 'keywords'.trim() !== '') {
      wrapper.appendChild(seperator)
 
-     const keywords = document.createTextNode("Keywords: " + user.keywords.replaceAll(" ", ", ").replaceAll("_", " "))
+     const keywords = document.createTextNode("Keywords: " + user.keywords.replaceAll(";", ", "))
      wrapper.appendChild(keywords)
    }
 
